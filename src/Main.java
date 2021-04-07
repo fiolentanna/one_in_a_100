@@ -1,16 +1,12 @@
 public class Main {
     public static void main (String[] args) {
         long balance = 100;
-        long income = 1100;
-        long bonus = income / 100;
+        long income = 100;
+        balance = balance + income;
         if (income > 1000) {
-             bonus = income / 100;
-        } else {
-            bonus = 0;
+            long bonus = income / 100;
+            balance = balance + bonus;
         }
-        long amount = balance + bonus;
-        System.out.println(amount);
-
+        System.out.println(balance);
     }
-
 }
